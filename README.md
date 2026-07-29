@@ -14,6 +14,14 @@ Otwórz w Chrome na telefonie:
 Menu (trzy kropki) → **„Zainstaluj aplikację"**. Dostaniesz ikonę na ekranie
 głównym, własne okno bez paska adresu i działanie offline.
 
+> **Zanim ten adres zacznie działać — jednorazowe kliknięcie.**
+> Settings → Pages → Source: **GitHub Actions** → Save.
+> Tego pierwszego włączenia nie da się zrobić z poziomu workflow: token
+> Actions nie ma uprawnienia do *utworzenia* strony Pages
+> (`Resource not accessible by integration`). Po tym jednym kliknięciu
+> workflow publikuje sam przy każdym pushu — nic więcej nie trzeba.
+> Potem uruchom ponownie: Actions → „Publikacja na GitHub Pages" → Re-run.
+
 ## Zainstaluj na Windows
 
 Pobierz folder [`windows/`](windows/) i kliknij dwukrotnie
